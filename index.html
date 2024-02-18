@@ -69,7 +69,7 @@
   
   <main>
     <!-- ## banner -->
-    <section class="mx-4">
+    <section class="mx-4 mb-8">
       <!-- container -->
       <div class="hero-bg max-w-screen-xl py-20 mx-auto bg-cover bg-center bg-no-repeat rounded-xl">
         <div class="py-8 px-4 mx-auto max-w-2xl text-center">
@@ -81,8 +81,8 @@
     </section>
 
     <!-- ## Offers section -->
-    <section id="offers-sect" class="max-w-screen-xl mx-auto px-4 py-12">
-      <h2 class="fond-bold text-3xl md:text-4xl text-center mb-6">Best offers for you</h2>
+    <section id="offers-sect" class="max-w-screen-xl mx-auto px-4 py-8 mb-8">
+      <h2 class="font-bold text-3xl md:text-4xl text-center mb-6">Best offers for you</h2>
 
       <!-- ### coupons -->
       <div class="flex flex-col items-center md:flex-row justify-between gap-8 md:gap-12">
@@ -108,6 +108,58 @@
           <div class="space-y-1">
             <p class="text-xl"><strong>Couple 20</strong></p>
             <p class="text-sm text-gray-600">Coupon Code</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="mt-8 block mx-auto text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800">See All Offers</button>
+    </section>
+
+    <!-- ## seat-reserve section -->
+    <section id="reserve-sect" class=" px-4 py-12 bg-gray-100 rounded-t-3xl shadow-[0_-5px_0_0_lightgreen]">
+      <div class="max-w-screen-xl mx-auto">
+        <header class="text-center max-w-lg mx-auto mb-8">
+          <h2 class="text-3xl md:text-4xl text-center mb-4 font-bold">RFP Paribahan</h2>
+          <p class="">You can reserve your sit here without being present in our ticket counter. It will save your valuable time. You can reserve maximum 4 seats.</p>
+        </header>
+  
+        <!-- ### info-subsection -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8 bg-white px-4 py-6 rounded-lg lg:bg-[url('./images/info-devider.png')] bg-no-repeat bg-contain bg-[center_left_70%]">
+          <!-- #### left-card -->
+          <div>
+            <!-- heading -->
+            <div class="flex items-start justify-between gap-4 mb-6">
+              <img src="./images/bus-logo.png" alt="">
+              <div class="flex-1">
+                <h3 class="text-xl font-bold">RFP Paribahan</h3>
+                <p>Coach-009-WEB ! AC_Business</p>
+              </div>
+              <span class="flex items-center gap-2 py-2 px-4 rounded-md bg-green-100 border border-green-600 text-green-600">
+                <img src="./images/seat-green.png" alt="">
+                <p class=""><span id="available-seats">8</span> Seats Left</p>
+              </span>
+            </div>
+            <!-- departure details -->
+            <ul class="bg-gray-200 p-4 rounded-lg">
+              <li class="flex items-center justify-between py-3 border-b border-gray-300 border-dashed rounded-lg gap-4">
+                <h4 class="text-gray-500">Route</h4>
+                <span>Dhaka - Sylhet</span>
+              </li>
+              <li class="flex items-center justify-between py-3 border-b border-gray-300 border-dashed rounded-lg gap-4">
+                <h4 class="text-gray-500">Departure Time</h4>
+                <span>9:00 PM</span>
+              </li>
+              <li class="flex items-center justify-between py-3 rounded-lg gap-4">
+                <span class="px-4 py-2 rounded-lg bg-gray-300 text-sm">Boarding Point - Laxmipur</span>
+                <span class="px-4 py-2 rounded-lg bg-gray-300 text-sm">Dropping Point - Bogura</span>
+                <span class="px-4 py-2 rounded-lg bg-gray-300 text-sm">Est. Time - 11 Hour</span>
+              </li>
+            </ul>
+          </div>
+          <!-- #### right card -->
+          <div class="p-8 md:px-20">
+            <img class="mx-auto mb-2" src="./images/fare.png" alt="">
+            <p class="text-center"><span class="font-bold text-2xl">550 Taka</span> <br> <span>Per Seat</span></p>
           </div>
         </div>
       </div>
