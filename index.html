@@ -228,7 +228,7 @@
                         <th scope="col" class="px-6 py-3">Fare</th>
                       </tr>
                   </thead>
-                  <tbody>
+                  <tbody id="selected-seats-list">
                       <tr class="border-t">
                           <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">A1</th>
                           <td class="px-6 py-4">economy</td>
@@ -244,12 +244,12 @@
                 </p>
                 <!-- coupon -->
                 <form id="coupon-form" class="mb-4 px-4">
-                  <label for="search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                  <label for="coupon-inp" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                   <div class="relative">
                     <input type="search" id="coupon-inp"
                       class="block w-full p-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                       placeholder="Have any copupon?" required />
-                    <button type="submit"
+                    <button type="submit" id="coupon-apply"
                       class="text-white absolute end-2.5 bottom-2.5 bg-green-500 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-green-600 dark:hover:bg-green-500 dark:focus:ring-green-800">Apply</button>
                   </div>
                 </form>
@@ -260,7 +260,7 @@
                 </p>
 
                 <!-- next btn -->
-                <button data-modal-target="reservation-modal" data-modal-toggle="reservation-modal" type="button" class="block w-full focus:outline-none text-white bg-green-500 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mt-8 mb-4 dark:bg-green-600 dark:hover:bg-green-500 dark:focus:ring-green-800">Next</button>
+                <button id="seats-next-btn" data-modal-target="reservation-modal" data-modal-toggle="reservation-modal" type="button" class="block w-full focus:outline-none text-white bg-green-500 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mt-8 mb-4 dark:bg-green-600 dark:hover:bg-green-500 dark:focus:ring-green-800">Next</button>
 
                 <!-- terms & policy -->
                 <div class="flex justify-between gap-4">
@@ -303,5 +303,7 @@
 
   <!-- flowbite script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <!-- my script -->
+  <script src="./script.js"></script>
 </body>
 </html>
