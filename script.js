@@ -50,7 +50,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
 // ## add click event to all seats for selecting by user
 passengerSeatsEl.addEventListener('click', e => {
-  
   // check if clicked on a seat
   if(e.target.tagName === 'BUTTON') {
     const selectedSeatId = e.target.id
