@@ -12,9 +12,9 @@
  - on page load: reset available and remaining seat amount, total and grand-total price; disable coupon-apply & seats-next button
  - listen for click event on seats: onclick, 
   - warn if the seat was selected previously or max 4 seats was selected. 
-  - if at least 1 seat is selected, enable next-btn. 
+  - enable next-btn if at least 1 seat is selected and phone-number-input is not empty. 
   - when a seat is clicked: update bg-color of the seat, available seats; insert seat details in selected-seat-list UI. Also, update total and grand total price.
-  - if 4 seats is selected, enable coupon apply btn.
+  - if 4 seats is selected then enable coupon apply btn.
   - when apply coupon buttn is clicked:
     - return, if total selected seats < 4 
     - take user's coupon & check for validation. warn if not valid; otherwise, calculate discount based on coupon, update grand-total and hide coupon form.

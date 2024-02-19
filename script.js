@@ -7,6 +7,7 @@ const grandTotalEl = document.getElementById('grand-total')
 const couponFormEl = document.getElementById('coupon-form')
 const couponApplyBtn = document.getElementById('coupon-apply')
 const seatsNextBtn = document.getElementById('seats-next-btn')
+const passengerInfoForm = document.getElementById('passenger-info-form')
 
 
 // vars
@@ -33,6 +34,12 @@ function disableBtn(buttonEl) {
 function enableBtn(buttonEl) {
   buttonEl.disabled = false
   buttonEl.classList.remove('cursor-not-allowed', 'opacity-50')
+}
+// enable next-btn: if at least 1 seat is selected & phone-number is not empty
+function enablePassengerNextBtn() {
+  if (totalSelectedSeats.length > 0 && passengerInfoForm['passenger-number'].value.trim().length > 0) {
+    enableBtn(seatsNextBtn)
+  }
 }
 
 // ## on page load
@@ -75,10 +82,8 @@ passengerSeatsEl.addEventListener('click', e => {
       enableBtn(couponApplyBtn)
     }
 
-    // enable next-btn if at least 1 seat is selected
-    if (totalSelectedSeats.length > 0) {
-      enableBtn(seatsNextBtn)
-    }
+    // enable next-btn
+    enablePassengerNextBtn()
 
     // update bg-color of selected seat
     document.getElementById(selectedSeatId).classList.add('selected-seat')
@@ -126,4 +131,10 @@ couponFormEl.addEventListener('submit', e => {
   } else {
     alert('invalid coupon!!')
   }
+})
+
+// passenger-info-form change
+passengerInfoForm['passenger-number'].addEventListener('input', function(e) {
+  // enable next-btn
+  enablePassengerNextBtn()
 })
