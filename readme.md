@@ -4,6 +4,8 @@
  - Desc: User can book the bus seat (highest 4), apply coupon. Desktop focused design. 
  - Lang: Html, tailwindcss, flowbite, vanilla js.
  - Developed by me (Rahat Faruk)
+ - My Live link: https://rahatfaruk.github.io/pha5-rfp-ticket-site/ 
+ - My Repo link: https://github.com/rahatfaruk/pha5-rfp-ticket-site 
 
 
 ### Tasks to do:

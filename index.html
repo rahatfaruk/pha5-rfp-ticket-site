@@ -273,33 +273,62 @@
         </div>
       </div>
     </section>
-  </main>
 
-  <!-- reservation-success-modal -->
-  <div id="reservation-modal" tabindex="-1"
-    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-    <div class="relative p-4 w-full max-w-md max-h-full">
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-        <!-- close btn -->
-        <button type="button" class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="reservation-modal">
-          <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-          </svg>
-          <span class="sr-only">Close modal</span>
-        </button>
-
-        <div class="p-8 text-center">
-          <img src="./images/success.png" class="mx-auto mb-4" alt="">
-          <h3 class="mb-3 text-lg font-normal text-green-500 dark:text-green-400">Success</h3>
-          <p class="mb-3 text-sm">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you. </p>
-          <p class="mb-3 text-sm text-gray-500">Shortly you will find a confirmation in your email.</p>
-          <button class="text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">Continue</button>
+    <!-- reservation-success-modal -->
+    <div id="reservation-modal" tabindex="-1"
+      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div class="relative p-4 w-full max-w-md max-h-full">
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <!-- close btn -->
+          <button type="button" class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="reservation-modal">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+  
+          <div class="p-8 text-center">
+            <img src="./images/success.png" class="mx-auto mb-4" alt="">
+            <h3 class="mb-3 text-lg font-normal text-green-500 dark:text-green-400">Success</h3>
+            <p class="mb-3 text-sm">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you. </p>
+            <p class="mb-3 text-sm text-gray-500">Shortly you will find a confirmation in your email.</p>
+            <button class="text-white bg-green-500 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center"  data-modal-hide="reservation-modal">Continue</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  
+  </main>
+
+  <footer class="px-4 py-8 bg-black text-white">
+    <div class="max-w-screen-xl mx-auto">
+      <!-- ### subsection -->
+      <div class="flex flex-col md:flex-row justify-between gap-4 border-b border-dashed border-gray-300 pb-6 mb-6">
+        <!-- desc -->
+        <div class="max-w-md">
+          <h2 class="text-2xl font-bold mb-2">RFP Ticket</h2>
+          <p class="text-gray-300">RFP-Ticket is a digital platform to make your daily commuting better.</p>
+        </div>
+        <!-- download app -->
+        <div>
+          <h2 class="mb-3">Download our app</h2>
+          <button class="flex items-center gap-2 border border-white p-2 rounded-md">
+            <img src="./images/playstore.png" alt="">
+            <p class="text-left text-sm">Get it on <span class="block text-lg font-semibold">Google Play</span></p>
+          </button>
+        </div>
+      </div>
+      <!-- ### subsection -->
+      <div class="flex flex-col md:flex-row justify-between gap-4 flex-wrap">
+        <p class="text-gray-400">@all rights reserved, P-Ticket services limited.2024</p>
+        <ul class="flex gap-6">
+          <li><a href="#" class="hover:underline">Terms & condition</a></li>
+          <li><a href="#" class="hover:underline">Return & refund policy</a></li>
+          <li><a href="#" class="hover:underline">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
   <!-- flowbite script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
