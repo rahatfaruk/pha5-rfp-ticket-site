@@ -138,3 +138,8 @@ passengerInfoForm['passenger-number'].addEventListener('input', function(e) {
   // enable next-btn
   enablePassengerNextBtn()
 })
+
+// prevnt form submission on form submit: next btn 
+passengerInfoForm.addEventListener('submit', e => {
+  e.preventDefault()
+})
